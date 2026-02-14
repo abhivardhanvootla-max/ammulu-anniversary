@@ -1,57 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>For Ammulu ❤️</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Ammulu ❤️</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
 
-    <!-- Password Screen -->
+    <!-- PASSWORD SCREEN -->
     <div id="passwordBox" class="card">
         <h2>Enter Our Secret Date 🔐</h2>
         <input type="password" id="passwordInput" placeholder="Enter password">
-        <button onclick="checkPassword()">Unlock</button>
-        <p id="error"></p>
+        <button onclick="checkPassword()">Unlock ❤️</button>
+        <p id="error" style="margin-top:10px;color:#ff4d6d;"></p>
     </div>
 
-    <!-- Love Question -->
+
+    <!-- LOVE QUESTION -->
     <div id="questionBox" class="card hidden">
         <h2>Did You Love Me? 🥺</h2>
         <button onclick="firstYes()">Yes ❤️</button>
     </div>
 
-    <!-- Cat Stage 1 -->
+
+    <!-- CAT STAGE 1 -->
     <div id="cat1" class="card hidden">
-        <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif">
-        <h3>Really? 😺</h3>
+        <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" 
+             style="width:200px;border-radius:15px;">
+        <h3 style="margin-top:15px;">Really? 😺</h3>
         <button onclick="secondYes()">Yes 😍</button>
     </div>
 
-    <!-- Cat Stage 2 -->
+
+    <!-- CAT STAGE 2 -->
     <div id="cat2" class="card hidden">
-        <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif">
-        <h2>Thank You Ammu ❤️ Love You</h2>
+        <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" 
+             style="width:200px;border-radius:15px;">
+        <h2 style="margin-top:15px;">Thank You Ammu ❤️ Love You</h2>
         <button onclick="showGallery()">Our Journey ➜</button>
     </div>
 
-    <<!-- Gallery -->
-<div id="gallery" class="hidden">
-    <h2>Our Beautiful Journey 🖤</h2>
-    <div class="slider">
-        <button onclick="prevImage()">◀</button>
-        <img id="slideImage" src="images/img1.jpg">
-        <button onclick="nextImage()">▶</button>
-    </div>
-    <button <a href="create message.html"></a> onclick="goMessage()">Message For You 💌</button>
-</div>
+
+    <!-- IMAGE GALLERY (ONLY 4 IMAGES) -->
+    <div id="gallery" class="card hidden">
+        <h2>Our Beautiful Journey 🖤</h2>
+
+        <div class="slider">
+            <button onclick="prevImage()">◀</button>
+            <img id="slideImage" src="images/img1.jpg">
+            <button onclick="nextImage()">▶</button>
+        </div>
+
         <button class="nextBtn" onclick="goMessage()">Message For You 💌</button>
     </div>
 
 </div>
 
+
 <script src="script.js"></script>
+
 </body>
 </html>
